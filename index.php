@@ -112,7 +112,6 @@ document.onpaste = function (e) {
 };
 
 function submitFileForm(file, type) {
-    <?php session_start(); ?>
     var extension = file.type.match(/\/([a-z0-9]+)/i)[1].toLowerCase();
     var formData = new FormData();
     formData.append('file', file, "image_file");
