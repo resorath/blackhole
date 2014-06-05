@@ -1,0 +1,44 @@
+html,body
+{
+    height: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Verdana, sans-serif;
+}
+body
+{
+   display: table; 
+   margin: 0 auto;
+}
+
+.container
+{  
+    height: 100%;
+    display: table-cell;   
+    vertical-align: middle;    
+}
+.cent
+{
+    height: 500px;
+    width: 500px;     
+}
+
+#whatdo
+{
+	z-index: 999;
+	font-size: 6em;
+	height: 500px;
+	position: relative;
+	text-align: center;
+}
+
+.whatdo-small
+{
+	font-size: 3em !important;
+
+}
+
+#blackhole
+{
+	width: 500px;
+}
