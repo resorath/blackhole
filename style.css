@@ -27,14 +27,14 @@ body
 {
 	z-index: 999;
 	font-size: 6em;
-	height: 500px;
 	position: relative;
 	text-align: center;
+	width: 100%;
 }
 
 .whatdo-small
 {
-	font-size: 3em !important;
+	font-size: 2em !important;
 
 }
 
@@ -52,4 +52,5 @@ body
 	top: 0px;
 	left: 0px;
 	z-index: 999;
+	width: 100%;
 }
