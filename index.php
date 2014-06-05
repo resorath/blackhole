@@ -32,6 +32,8 @@ session_write_close();
 </head>
 <body>
 
+    <div id="resulttext"></div>
+
     <div class="container" id="bhcontainer">
         <div class="cent">
             <img src="blackhole.jpg" alt="BlackHole" id="blackhole">
@@ -131,13 +133,10 @@ function submitFileForm(file, type) {
             clearInterval(interval);
 
             $('#blackhole').rotate(0);
-            $('#whatdo').hide(function(){
-                $.get( "filefinder.php", function( data ) {
-                   $( "#whatdo" ).html("<?php echo("http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']) ?>" + data )
-                });
-                $(this).css('color', '#000000');
-                $(this).css("margin-top", "30px");
-                $(this).fadeIn();
+            $('#whatdo').html("");
+
+            $.get( "filefinder.php", function( data ) {
+               $( "#resulttext" ).html("<?php echo("http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']) ?>" + data )
             });
 
             $('html, body').animate({
